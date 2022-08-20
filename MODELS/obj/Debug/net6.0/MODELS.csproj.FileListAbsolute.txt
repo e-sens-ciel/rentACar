@@ -1,0 +1,11 @@
+C:\Users\MediaMonster\Downloads\RentACar\RentACar\MODELS\bin\Debug\net6.0\MODELS.deps.json
+C:\Users\MediaMonster\Downloads\RentACar\RentACar\MODELS\bin\Debug\net6.0\MODELS.dll
+C:\Users\MediaMonster\Downloads\RentACar\RentACar\MODELS\bin\Debug\net6.0\ref\MODELS.dll
+C:\Users\MediaMonster\Downloads\RentACar\RentACar\MODELS\bin\Debug\net6.0\MODELS.pdb
+C:\Users\MediaMonster\Downloads\RentACar\RentACar\MODELS\obj\Debug\net6.0\MODELS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MediaMonster\Downloads\RentACar\RentACar\MODELS\obj\Debug\net6.0\MODELS.AssemblyInfoInputs.cache
+C:\Users\MediaMonster\Downloads\RentACar\RentACar\MODELS\obj\Debug\net6.0\MODELS.AssemblyInfo.cs
+C:\Users\MediaMonster\Downloads\RentACar\RentACar\MODELS\obj\Debug\net6.0\MODELS.csproj.CoreCompileInputs.cache
+C:\Users\MediaMonster\Downloads\RentACar\RentACar\MODELS\obj\Debug\net6.0\MODELS.dll
+C:\Users\MediaMonster\Downloads\RentACar\RentACar\MODELS\obj\Debug\net6.0\ref\MODELS.dll
+C:\Users\MediaMonster\Downloads\RentACar\RentACar\MODELS\obj\Debug\net6.0\MODELS.pdb

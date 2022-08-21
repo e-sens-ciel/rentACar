@@ -5,6 +5,8 @@ C:\Users\MediaMonster\Downloads\RentACar\RentACar\Web\obj\Debug\net6.0\Web.Assem
 C:\Users\MediaMonster\Downloads\RentACar\RentACar\Web\obj\Debug\net6.0\Web.csproj.CoreCompileInputs.cache
 C:\Users\MediaMonster\Downloads\RentACar\RentACar\Web\obj\Debug\net6.0\Web.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\MediaMonster\Downloads\RentACar\RentACar\Web\obj\Debug\net6.0\Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\MediaMonster\Downloads\RentACar\RentACar\Web\obj\Debug\net6.0\Web.RazorAssemblyInfo.cache
+C:\Users\MediaMonster\Downloads\RentACar\RentACar\Web\obj\Debug\net6.0\Web.RazorAssemblyInfo.cs
 C:\Users\MediaMonster\Downloads\RentACar\RentACar\Web\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\MediaMonster\Downloads\RentACar\RentACar\Web\bin\Debug\net6.0\appsettings.json
 C:\Users\MediaMonster\Downloads\RentACar\RentACar\Web\bin\Debug\net6.0\Web.staticwebassets.runtime.json
@@ -234,13 +236,14 @@ C:\Users\MediaMonster\Downloads\RentACar\RentACar\Web\bin\Debug\net6.0\MODELS.dl
 C:\Users\MediaMonster\Downloads\RentACar\RentACar\Web\bin\Debug\net6.0\MODELS.pdb
 C:\Users\MediaMonster\Downloads\RentACar\RentACar\Web\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\MediaMonster\Downloads\RentACar\RentACar\Web\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\MediaMonster\Downloads\RentACar\RentACar\Web\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\MediaMonster\Downloads\RentACar\RentACar\Web\obj\Debug\net6.0\scopedcss\bundle\Web.styles.css
+C:\Users\MediaMonster\Downloads\RentACar\RentACar\Web\obj\Debug\net6.0\scopedcss\projectbundle\Web.bundle.scp.css
 C:\Users\MediaMonster\Downloads\RentACar\RentACar\Web\obj\Debug\net6.0\Web.csproj.CopyComplete
 C:\Users\MediaMonster\Downloads\RentACar\RentACar\Web\obj\Debug\net6.0\Web.dll
 C:\Users\MediaMonster\Downloads\RentACar\RentACar\Web\obj\Debug\net6.0\ref\Web.dll
 C:\Users\MediaMonster\Downloads\RentACar\RentACar\Web\obj\Debug\net6.0\Web.pdb
 C:\Users\MediaMonster\Downloads\RentACar\RentACar\Web\obj\Debug\net6.0\Web.genruntimeconfig.cache
-C:\Users\MediaMonster\Downloads\RentACar\RentACar\Web\obj\Debug\net6.0\Web.RazorAssemblyInfo.cache
-C:\Users\MediaMonster\Downloads\RentACar\RentACar\Web\obj\Debug\net6.0\Web.RazorAssemblyInfo.cs
-C:\Users\MediaMonster\Downloads\RentACar\RentACar\Web\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-C:\Users\MediaMonster\Downloads\RentACar\RentACar\Web\obj\Debug\net6.0\scopedcss\projectbundle\Web.bundle.scp.css
+C:\Users\MediaMonster\Downloads\RentACar\RentACar\Web\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\MediaMonster\Downloads\RentACar\RentACar\Web\bin\Debug\net6.0\System.Web.Http.dll
+C:\Users\MediaMonster\Downloads\RentACar\RentACar\Web\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

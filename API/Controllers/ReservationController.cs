@@ -21,5 +21,12 @@ namespace API.Controllers
             List<Reservation> reservations = _reservations.GetAll();
             return Ok(reservations);
         }
+
+        [HttpDelete("[action]")]
+        public IActionResult DeleteReservation(int id)
+        {
+            _reservations.Delete(id);
+            return Ok();
+        }
     }
 }

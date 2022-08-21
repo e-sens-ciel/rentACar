@@ -13,9 +13,9 @@ namespace MODELS
         public DateTime DateFin { get; set; }
         public double PrixTotal { get; set; }
         public bool Remise { get; set; }
-        public class Reservations
-        {
-            public List<Reservation> reservations { get; set; }
-        }
+        //public class Reservations
+        //{
+        //    public List<Reservation> reservations { get; set; }
+        //}
     }
 }

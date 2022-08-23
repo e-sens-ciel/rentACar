@@ -1,6 +1,7 @@
 ﻿using DAL;
 using MODELS;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace BL
 {
@@ -18,6 +19,36 @@ namespace BL
             return reservations;
         }
 
+        public Reservation GetById(int id )
+        {
+            Reservation reservation = _carContext.Reservation.Find(id);
+
+            if (reservation == null)
+            {
+                throw new NotImplementedException();
+            }
+
+            return reservation;
+        }
+        public async Task UpdateReservation(int id, Reservation reservation)
+        {
+            //var entity = _carContext.Reservation.Find(id);
+            //entity = new Reservation
+            //{
+            //    DateDebut = 
+            //};
+            if (id != reservation.ReservationID)
+            {
+                throw new NotImplementedException();
+            }
+
+            _carContext.Entry(reservation).State = EntityState.Modified;
+
+            await _carContext.SaveChangesAsync();
+
+        }
+
+  
         public async Task<IActionResult> Delete(int id)
         {
             //var reservation = await _carContext.Reservation.FindAsync(id);

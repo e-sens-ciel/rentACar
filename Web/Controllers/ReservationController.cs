@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Web.Interfaces;
-
+using Web.Models;
 
 namespace Web.Controllers
 {
@@ -21,12 +21,16 @@ namespace Web.Controllers
             var reservations = await _reservationService.GetAllReservations();
             return View(reservations);
         }
-
-        public async Task<ActionResult> DeleteReservation(int id)
+        public async Task<ActionResult> UpdateReservation(Reservation reservation)
         {
-            var deleteReservation = await _reservationService.DeleteReservation(id);
-            var reservations = await _reservationService.GetAllReservations();
+            var reservations = await _reservationService.UpdateReservation(reservation);
             return View(reservations);
         }
+        //public async Task<ActionResult> DeleteReservation(int id)
+        //{
+        //    var deleteReservation = await _reservationService.DeleteReservation(id);
+        //    var reservations = await _reservationService.GetAllReservations();
+        //    return View(reservations);
+        //}
     }
 }

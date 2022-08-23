@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
-using System.Net;
-using System.Web.Http;
+using System.Net.Http;
+using System.Text;
 using Web.Interfaces;
 using Web.Models;
 
@@ -27,6 +27,18 @@ namespace Web.Services
 
         }
 
+        public async Task<HttpResponseMessage> UpdateReservation(Reservation reservation)
+        {
+            //var httpResponse = await _httpClient.PutAsync("https://localhost:7090/Reservation/UpdateReservation?" + reservation);
+
+            //return httpResponse;
+            var objAsJson = JsonConvert.SerializeObject(reservation);
+            var content = new StringContent(objAsJson, Encoding.UTF8, "application/json");
+            var result = await _httpClient.PutAsync("https://localhost:7090/Reservation/UpdateReservation?"+reservation.ReservationID);
+            return result;
+
+        }
+
         public async Task<HttpResponseMessage> DeleteReservation(int id)
         {
             //var deleteTask = await _httpClient.DeleteAsync("https://localhost:7090/Reservation/DeleteReservation?id="+id.ToString()).Result;
@@ -34,8 +46,5 @@ namespace Web.Services
 
             return response;
         }
-
-
-
     }
 }

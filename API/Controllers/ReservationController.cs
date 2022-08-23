@@ -22,6 +22,23 @@ namespace API.Controllers
             return Ok(reservations);
         }
 
+
+        [HttpGet("[action]")]
+        public IActionResult GetReservation(int id)
+        {
+
+            Reservation reservation = _reservations.GetById(id);
+            return Ok(reservation);
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult UpdateReservation(int id, Reservation reservation)
+        {
+            _reservations.UpdateReservation(id, reservation);
+   
+            return Ok();
+        }
+
         [HttpDelete("[action]")]
         public IActionResult DeleteReservation(int id)
         {

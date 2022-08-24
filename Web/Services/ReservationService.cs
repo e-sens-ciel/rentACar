@@ -16,6 +16,17 @@ namespace Web.Services
             _httpClient = httpClient;
         }
 
+        
+        public async Task<Reservation> GetReservation(int id)
+        {
+
+
+            var httpResponse = await _httpClient.GetAsync("https://localhost:7090/Reservation/" + id);
+            var jSon = await httpResponse.Content.ReadAsStringAsync();
+            var reservation = JsonConvert.DeserializeObject<Reservation>(jSon);
+            return reservation;
+
+        }
         public async Task<List<Reservation>> GetAllReservations()
         {
 
@@ -26,7 +37,16 @@ namespace Web.Services
             return reservations;
 
         }
+        
+        public async Task<HttpResponseMessage> EditReservation(Reservation reservation)
+        {
 
+            var objAsJson = JsonConvert.SerializeObject(reservation);
+            var content = new StringContent(objAsJson, Encoding.UTF8, "application/json");
+            var result = await _httpClient.PutAsync("https://localhost:7090/Reservation/" + reservation.ReservationID, content);
+            return result;
+
+        }
         public async Task<HttpResponseMessage> UpdateReservation(Reservation reservation)
         {
             //var httpResponse = await _httpClient.PutAsync("https://localhost:7090/Reservation/UpdateReservation?" + reservation);
@@ -34,7 +54,7 @@ namespace Web.Services
             //return httpResponse;
             var objAsJson = JsonConvert.SerializeObject(reservation);
             var content = new StringContent(objAsJson, Encoding.UTF8, "application/json");
-            var result = await _httpClient.PutAsync("https://localhost:7090/Reservation/UpdateReservation?"+reservation.ReservationID);
+            var result = await _httpClient.PutAsync("https://localhost:7090/Reservation/UpdateReservation?" + reservation.ReservationID, content);
             return result;
 
         }

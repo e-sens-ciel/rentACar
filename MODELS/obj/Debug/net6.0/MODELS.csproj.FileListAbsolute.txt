@@ -9,3 +9,4 @@ C:\Users\MediaMonster\Downloads\RentACar\RentACar\MODELS\obj\Debug\net6.0\MODELS
 C:\Users\MediaMonster\Downloads\RentACar\RentACar\MODELS\obj\Debug\net6.0\MODELS.dll
 C:\Users\MediaMonster\Downloads\RentACar\RentACar\MODELS\obj\Debug\net6.0\ref\MODELS.dll
 C:\Users\MediaMonster\Downloads\RentACar\RentACar\MODELS\obj\Debug\net6.0\MODELS.pdb
+C:\Users\MediaMonster\Downloads\RentACar\RentACar\MODELS\obj\Debug\net6.0\MODELS.csproj.AssemblyReference.cache

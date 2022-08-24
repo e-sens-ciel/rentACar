@@ -23,7 +23,7 @@ namespace API.Controllers
         }
 
 
-        [HttpGet("[action]")]
+        [HttpGet("{id}")]
         public IActionResult GetReservation(int id)
         {
 
@@ -32,10 +32,17 @@ namespace API.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateReservation(int id, Reservation reservation)
+        public IActionResult UpdateReservation(Reservation reservation)
         {
-            _reservations.UpdateReservation(id, reservation);
+            _reservations.UpdateReservation(reservation);
    
+            return Ok();
+        }
+
+        [HttpPost("[action]")]
+        public IActionResult CreateReservation(Reservation reservation)
+        {
+            _reservations.Create(reservation);
             return Ok();
         }
 

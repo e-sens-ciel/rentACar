@@ -30,17 +30,29 @@ namespace BL
 
             return reservation;
         }
-        public async Task UpdateReservation(int id, Reservation reservation)
+
+        public async Task<IActionResult> Create(Reservation reservation)
+        {
+            if (reservation == null)
+            {
+                throw new NotImplementedException();
+            }
+            _carContext.Reservation.Add(reservation);
+            await _carContext.SaveChangesAsync();
+
+            return NoContent();
+        }
+        public async Task UpdateReservation(Reservation reservation)
         {
             //var entity = _carContext.Reservation.Find(id);
             //entity = new Reservation
             //{
             //    DateDebut = 
             //};
-            if (id != reservation.ReservationID)
-            {
-                throw new NotImplementedException();
-            }
+            //if (id != reservation.ReservationID)
+            //{
+            //    throw new NotImplementedException();
+            //}
 
             _carContext.Entry(reservation).State = EntityState.Modified;
 

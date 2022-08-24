@@ -7,7 +7,7 @@
 <h1>GetAllReservations</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="CreateReservation">Create New</a>
 </p>
 <table class="table">
     <thead>
@@ -49,9 +49,9 @@
                 @Html.DisplayFor(modelItem => item.Remise)
             </td>
             <td>
-                @Html.ActionLink("Edit", "UpdateReservation", new { id= item.ReservationID, dateDebut= item.DateDebut, dateFin= item.DateFin, item.PrixTotal, item.Remise }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Update", "UpdateReservation", new { id= item.ReservationID, dateDebut= item.DateDebut, dateFin= item.DateFin, item.PrixTotal, item.Remise }) |
+                @Html.ActionLink("Edit Reservation", "EditReservation", new { id= item.ReservationID }) |
+                @Html.ActionLink("Delete", "DeleteReservation", new { id=item.ReservationID })
             </td>
         </tr>
 }

@@ -23,8 +23,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cRGVsZXRlUmVzZXJ2YXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/MediaMonster/Downloads/RentACar/RentACar/Web/Views/Reservation/EditReservation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cRWRpdFJlc2VydmF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/MediaMonster/Downloads/RentACar/RentACar/Web/Views/Reservation/GetAllReservations.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cR2V0QWxsUmVzZXJ2YXRpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MediaMonster/Downloads/RentACar/RentACar/Web/Views/Reservation/GetReservation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cR2V0UmVzZXJ2YXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/MediaMonster/Downloads/RentACar/RentACar/Web/Views/Reservation/UpdateReservation.cshtml]

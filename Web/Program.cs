@@ -29,9 +29,6 @@ app.MapControllerRoute(
     pattern: "{controller=Reservation}/{action=GetAllReservations}/{id?}");
 
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Reservation}/{action=UpdateReservation}/{id?}");
 
 app.MapRazorPages();
 app.Run();

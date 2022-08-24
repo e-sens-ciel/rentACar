@@ -9,8 +9,4 @@
         public bool Remise { get; set; }
     }
 
-    //public class Reservations
-    //{
-    //    public List<Reservation> allReservations { get; set; }
-    //}
 }

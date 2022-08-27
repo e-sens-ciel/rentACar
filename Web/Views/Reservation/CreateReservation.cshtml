@@ -1,16 +1,22 @@
 ﻿@model Web.Models.Reservation
 
+
+
 @{
-    ViewData["Title"] = "UpdateReservation";
+    ViewData["Title"] = "CreateReservation";
 }
 
-<h1>UpdateReservation</h1>
+
+
+<h1>CreateReservation</h1>
+
+
 
 <h4>Reservation</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="UpdateReservation">
+        <form asp-action="CreateReservationObj">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="ReservationID" class="control-label"></label>
@@ -38,13 +44,34 @@
                 </label>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <label asp-for="Fk_ClientID" class="control-label"></label>
+                <input asp-for="Fk_ClientID" class="form-control" />
+                <span asp-validation-for="Fk_ClientID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fk_DepotArriveeID" class="control-label"></label>
+                <input asp-for="Fk_DepotArriveeID" class="form-control" />
+                <span asp-validation-for="Fk_DepotArriveeID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fk_DepotDepartID" class="control-label"></label>
+                <input asp-for="Fk_DepotDepartID" class="form-control" />
+                <span asp-validation-for="Fk_DepotDepartID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fk_VoitureID" class="control-label"></label>
+                <input asp-for="Fk_VoitureID" class="form-control" />
+                <span asp-validation-for="Fk_VoitureID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
+
+<div>
+    <a asp-action="GetAllReservations">Back to List</a>
+</div>

@@ -16,6 +16,18 @@ namespace Web.Controllers
         {
             return View();
         }
+
+        public async Task<ActionResult> CreateReservation()
+        {
+            return View();
+        }
+        public async Task<ActionResult> CreateReservationObj(Reservation reservation)
+        {
+
+            await _reservationService.CreateReservationObj(reservation);
+
+            return RedirectToAction("GetAllReservations");
+        }
         public async Task<ActionResult> GetReservation(int id)
         {
             var reservation = await _reservationService.GetReservation(id);
@@ -34,14 +46,13 @@ namespace Web.Controllers
         }
         public async Task<ActionResult> UpdateReservation(Reservation reservation)
         {
-            var reservations = await _reservationService.UpdateReservation(reservation);
-            return View(reservations);
+            await _reservationService.UpdateReservation(reservation);
+            return RedirectToAction("GetAllReservations");
         }
         public async Task<ActionResult> DeleteReservation(int id)
         {
-            //Reservation reservation = await _reservationService.GetReservation(id);
-            var deleteReservation = await _reservationService.DeleteReservation(id);
-            return View();
+            await _reservationService.DeleteReservation(id);
+            return RedirectToAction("GetAllReservations");
         }
     }
 }

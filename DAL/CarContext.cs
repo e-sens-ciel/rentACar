@@ -1,10 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MODELS;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using MODELS.Client;
 
 namespace DAL
 {
@@ -17,5 +13,6 @@ namespace DAL
 
         public DbSet<Reservation> Reservation { get; set; }
 
+        //public DbSet<Client> Client { get; set; }
     }
 }

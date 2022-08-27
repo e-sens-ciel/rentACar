@@ -16,6 +16,7 @@ namespace BL
         public List<Reservation> GetAll()
         {
             List<Reservation> reservations = _carContext.Reservation.ToList();
+
             return reservations;
         }
 
@@ -44,29 +45,13 @@ namespace BL
         }
         public async Task UpdateReservation(Reservation reservation)
         {
-            //var entity = _carContext.Reservation.Find(id);
-            //entity = new Reservation
-            //{
-            //    DateDebut = 
-            //};
-            //if (id != reservation.ReservationID)
-            //{
-            //    throw new NotImplementedException();
-            //}
-
             _carContext.Entry(reservation).State = EntityState.Modified;
-
             await _carContext.SaveChangesAsync();
-
         }
 
   
         public async Task<IActionResult> Delete(int id)
         {
-            //var reservation = await _carContext.Reservation.FindAsync(id);
-            //_carContext.Reservation.Remove(entity);
-            //await _carContext.SaveChangesAsync();
-            //var reservation = await _carContext.Reservation.SingleOrDefaultAsync(m => m.ReservationID == id);
             if (id == null)
             {
                 throw new NotImplementedException();

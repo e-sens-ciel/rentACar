@@ -11,6 +11,8 @@
         public int Fk_DepotArriveeID { get; set; }
         public int Fk_DepotDepartID { get; set; }
         public int Fk_VoitureID { get; set; }
+
+        public List<Depot> Depots { get; set; }
     }
 
 }

@@ -42,7 +42,7 @@ namespace API.Controllers
         [HttpPost("[action]")]
         public IActionResult CreateReservation(Reservation reservation)
         {
-            _reservations.Create(reservation);
+            _reservations.CreateReservation(reservation);
             return Ok();
         }
 

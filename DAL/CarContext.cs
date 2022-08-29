@@ -12,7 +12,11 @@ namespace DAL
         }
 
         public DbSet<Reservation> Reservation { get; set; }
+        public DbSet<Voiture> Voiture { get; set; }
+        public DbSet<ForfaitDepot> ForfaitDepot { get; set; }
+        public DbSet<Note> Note { get; set; }
+        public DbSet<Depot> Depot { get; set; }
+        public DbSet<Pays> Pays { get; set; }
 
-        //public DbSet<Client> Client { get; set; }
     }
 }

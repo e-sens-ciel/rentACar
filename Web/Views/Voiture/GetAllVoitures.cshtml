@@ -1,0 +1,72 @@
+﻿@model IEnumerable<Web.Models.Voiture>
+
+@{
+    ViewData["Title"] = "GetAllVoitures";
+}
+<br />
+<h1>Cars tool</h1>
+<p>Here you can manage all the cars</p>
+<br />
+<p>
+    <a asp-action="CreateVoiture">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Immatriculation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Marque)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Modele)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Kilometrage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Notoriete)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VoitureID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fk_DepotID)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Immatriculation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Marque)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Modele)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kilometrage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Notoriete)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VoitureID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fk_DepotID)
+            </td>
+            <td>
+                @Html.ActionLink("Update", "EditVoiture", new { immatriculation = item.Immatriculation, marque = item.Marque, modele = item.Modele, kilometrage = item.Kilometrage, notoriete = item.Notoriete, id = item.VoitureID, FkDepotId = item.Fk_DepotID }) |
+                @Html.ActionLink("Details", "GetVoiture", new {  id=item.VoitureID  }) |
+                @Html.ActionLink("Delete", "DeleteVoiture", new {  id=item.VoitureID  })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

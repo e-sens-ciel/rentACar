@@ -3,9 +3,10 @@
 @{
     ViewData["Title"] = "GetAllReservations";
 }
-
-<h1>GetAllReservations</h1>
-
+<br />
+<h1>Reservations Tools</h1>
+<p>Here you can manage all the reservations</p>
+<br />
 <p>
     <a asp-action="CreateReservation">Create New</a>
 </p>
@@ -49,8 +50,8 @@
                 @Html.DisplayFor(modelItem => item.Remise)
             </td>
             <td>
-                @Html.ActionLink("Update", "UpdateReservation", new { id= item.ReservationID, dateDebut= item.DateDebut, dateFin= item.DateFin, item.PrixTotal, item.Remise }) |
-                @Html.ActionLink("Edit Reservation", "EditReservation", new { id= item.ReservationID }) |
+                @Html.ActionLink("Update", "EditReservation", new { id= item.ReservationID, dateDebut= item.DateDebut, dateFin= item.DateFin, item.PrixTotal, item.Remise }) |
+                @Html.ActionLink("Details", "GetReservation", new { id= item.ReservationID }) |
                 @Html.ActionLink("Delete", "DeleteReservation", new { id=item.ReservationID })
             </td>
         </tr>

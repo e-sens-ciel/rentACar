@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Web.Models.Depot>
+
+@{
+    ViewData["Title"] = "GetAllDepots";
+}
+<br />
+<h1>Warehouse Tools</h1>
+<p>Here you can manage all the warehouse</p>
+<br />
+<p>
+    <a asp-action="CreateDepot">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DepotID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Adresse)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ville)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DepotID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Adresse)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ville)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.ActionLink("Update", "EditDepot", new { id=item.DepotID}) |
+                @Html.ActionLink("Details", "GetDepot", new {  id=item.DepotID }) |
+                @Html.ActionLink("Delete", "DeleteDepot", new { id=item.DepotID})
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

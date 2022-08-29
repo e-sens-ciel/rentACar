@@ -32,7 +32,7 @@ namespace BL
             return reservation;
         }
 
-        public async Task<IActionResult> Create(Reservation reservation)
+        public async Task<IActionResult> CreateReservation(Reservation reservation)
         {
             if (reservation == null)
             {

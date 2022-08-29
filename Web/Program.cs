@@ -11,6 +11,10 @@ ConfigurationManager configuration = builder.Configuration;
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddHttpClient<IReservationService, ReservationService>();
+builder.Services.AddHttpClient<IDepotService, DepotService>();
+builder.Services.AddHttpClient<IVoitureService, VoitureService>();
+
+
 builder.Services.AddRazorPages();
 
 var app = builder.Build();

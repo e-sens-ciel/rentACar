@@ -15,8 +15,48 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\MediaMonster\Downloads\RentACar\RentACar\Web
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/MediaMonster/Downloads/RentACar/RentACar/Web/Views/Depot/CreateDepot.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwb3RcQ3JlYXRlRGVwb3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MediaMonster/Downloads/RentACar/RentACar/Web/Views/Depot/EditDepot.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwb3RcRWRpdERlcG90LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MediaMonster/Downloads/RentACar/RentACar/Web/Views/Depot/GetAllDepots.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwb3RcR2V0QWxsRGVwb3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MediaMonster/Downloads/RentACar/RentACar/Web/Views/Depot/GetDepot.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwb3RcR2V0RGVwb3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/MediaMonster/Downloads/RentACar/RentACar/Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MediaMonster/Downloads/RentACar/RentACar/Web/Views/ReservationZ/CreateReservation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25aXENyZWF0ZVJlc2VydmF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MediaMonster/Downloads/RentACar/RentACar/Web/Views/ReservationZ/DeleteReservation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25aXERlbGV0ZVJlc2VydmF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MediaMonster/Downloads/RentACar/RentACar/Web/Views/ReservationZ/EditReservation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25aXEVkaXRSZXNlcnZhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MediaMonster/Downloads/RentACar/RentACar/Web/Views/ReservationZ/GetAllReservations.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25aXEdldEFsbFJlc2VydmF0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MediaMonster/Downloads/RentACar/RentACar/Web/Views/ReservationZ/GetReservation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25aXEdldFJlc2VydmF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MediaMonster/Downloads/RentACar/RentACar/Web/Views/ReservationZ/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25aXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/MediaMonster/Downloads/RentACar/RentACar/Web/Views/Reservation/CreateReservation.cshtml]
@@ -39,12 +79,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cR2V0UmVzZXJ2YXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MediaMonster/Downloads/RentACar/RentACar/Web/Views/Reservation/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/MediaMonster/Downloads/RentACar/RentACar/Web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MediaMonster/Downloads/RentACar/RentACar/Web/Views/Voiture/CreateVoiture.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9pdHVyZVxDcmVhdGVWb2l0dXJlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MediaMonster/Downloads/RentACar/RentACar/Web/Views/Voiture/EditVoiture.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9pdHVyZVxFZGl0Vm9pdHVyZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MediaMonster/Downloads/RentACar/RentACar/Web/Views/Voiture/GetAllVoitures.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9pdHVyZVxHZXRBbGxWb2l0dXJlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MediaMonster/Downloads/RentACar/RentACar/Web/Views/Voiture/GetVoiture.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9pdHVyZVxHZXRWb2l0dXJlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/MediaMonster/Downloads/RentACar/RentACar/Web/Views/_ViewImports.cshtml]

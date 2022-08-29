@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Web.Models.Reservation>
+
+@{
+    ViewData["Title"] = "GetAllReservations";
+}
+
+<h1>GetAllReservations</h1>
+
+<p>
+    <a asp-action="CreateReservation">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ReservationID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateDebut)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateFin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrixTotal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Remise)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReservationID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateDebut)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateFin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrixTotal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Remise)
+            </td>
+            <td>
+                @Html.ActionLink("Update", "UpdateReservation", new { id= item.ReservationID, dateDebut= item.DateDebut, dateFin= item.DateFin, item.PrixTotal, item.Remise }) |
+                @Html.ActionLink("Edit Reservation", "EditReservation", new { id= item.ReservationID }) |
+                @Html.ActionLink("Delete", "DeleteReservation", new { id=item.ReservationID })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

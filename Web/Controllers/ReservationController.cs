@@ -7,6 +7,8 @@ namespace Web.Controllers
     public class ReservationController : Controller
     {
         public IReservationService _reservationService;
+        public IDepotService _depotService;
+
         public ReservationController(IReservationService reservationService)
         {
             _reservationService = reservationService;
@@ -19,6 +21,7 @@ namespace Web.Controllers
 
         public async Task<ActionResult> CreateReservation()
         {
+            //var depots = _depotService.GetAllDepots();
             return View();
         }
         public async Task<ActionResult> CreateReservationObj(Reservation reservation)
@@ -36,6 +39,7 @@ namespace Web.Controllers
         public async Task<ActionResult> GetAllReservations()
         {
             var reservations = await _reservationService.GetAllReservations();
+            
             return View(reservations);
         }
 
